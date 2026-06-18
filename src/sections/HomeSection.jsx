@@ -1,42 +1,73 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export const HomeSection = () => {
+  // Animation variants for consistent styling
+  const fadeInUp = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  };
+
   return (
-    <section className="relative overflow-hidden bg-[#1E3E85]">
-      {/* Top Left Blob */}
-      <div className="absolute -top-60 left-20 h-90 w-90 rounded-full bg-white/5" />
+    <section className="relative overflow-hidden">
+      {/* Middle Transparent Circle */}
+      <div className="absolute -top-50 left-48 h-80 w-80 -translate-x-1/2 rounded-full bg-white/3" />
+      <div className="absolute -bottom-20 lg:-bottom-10 -left-20 md:left-[60%] h-110 w-110 -translate-x-1/2 rounded-full bg-white/5" />
 
-      {/* Bottom Right Blob */}
-      <div className="absolute -bottom-10 right-100 h-90 w-90 rounded-full bg-white/5" />
+      <div className="bg-[linear-gradient(131.63deg,#1E3E85_6.87%,#336DA6_106.04%)] z-60">
+        {/* Content */}
+        <div className="relative z-10 flex h-[60vh] md:h-[80vh] flex-col items-center justify-center px-6 py-20 text-center">
+          {/* Animated Heading */}
+          <motion.h1 
+            className="max-w-4xl text-4xl font-bold text-white md:text-6xl"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+          >
+            RemoteRecruit's Difference
+          </motion.h1>
 
-      {/* Curved Line */}
+          {/* Animated Paragraph with slight delay */}
+          <motion.p 
+            className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            transition={{ delay: 0.2 }}
+          >
+            RemoteRecruit is connecting the world with an easy-to-use platform
+            that lets full-time, part-time, and freelance workers showcase their
+            talents to businesses that need them. With no paywalls, no fees, and
+            no barriers, there's nothing but you, your talents, and the next
+            step in your career.
+          </motion.p>
+        </div>
+      </div>
+
       <svg
-        className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1440 800"
+        className="absolute -bottom-20 left-0 w-full z-20 hidden md:block"
+        viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >
         <path
-          d="M-100 500 C300 250, 700 750, 1600 300"
-          fill="none"
-          stroke="rgba(255,255,255,0.12)"
-          strokeWidth="3"
+          fill="#FFFFFF"
+          d="
+    M0,120
+    C250,240 450,250 650,180
+    C850,100 1050,60 1250,130
+    C1350,160 1400,200 1440,210
+    L1440,320
+    L0,320
+    Z
+  "
         />
       </svg>
-
-      {/* Content */}
-      <div className="relative z-10 flex min-h-[70vh] md:min-h-[80vh] flex-col items-center justify-center gap-5 px-6 py-20 text-center">
-        <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
-          RemoteRecruit's Difference
-        </h1>
-
-        <p className="max-w-xs text-base font-light text-white/90 sm:max-w-lg sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl">
-          RemoteRecruit is connecting the world with an easy-to-use platform
-          that lets full-time, part-time, and freelance workers showcase their
-          talents to businesses that need them. With no paywalls, no fees, and
-          no barriers, there's nothing but you, your talents, and the next step
-          in your career.
-        </p>
-      </div>
     </section>
   );
 };
