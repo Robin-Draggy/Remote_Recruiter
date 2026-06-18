@@ -39,7 +39,7 @@ export const JobBoard = () => {
           </div>
 
           {/* badges */}
-          <div className="absolute bottom-26 lg:bottom-50 left-0 scale-90 sm:scale-100">
+          <div className="absolute bottom-35 lg:bottom-50 -left-7 lg:left-0 scale-90 sm:scale-100">
             <ProfileBadge
               title="Python Developer"
               subtitle="Felonious Gru"
@@ -47,7 +47,7 @@ export const JobBoard = () => {
             />
           </div>
 
-          <div className="absolute bottom-8 lg:bottom-20 left-10 sm:left-17 scale-90 sm:scale-100">
+          <div className="absolute bottom-12 lg:bottom-20 left-10 sm:left-17 scale-90 sm:scale-100">
             <ProfileBadge
               title="Front End Wizard"
               subtitle="Mel Muselphiem"
@@ -56,7 +56,7 @@ export const JobBoard = () => {
           </div>
 
           {/* main card */}
-          <div className="h-80 w-65 sm:h-95 sm:w-[320px] lg:h-113 lg:w-88 rounded-4xl shadow-[14px_41px_100px_0px_#3159D31F] flex flex-col items-center pt-4">
+          <div className="h-100 w-80 lg:h-113 lg:w-88 rounded-4xl shadow-[14px_41px_100px_0px_#3159D31F] flex flex-col items-center pt-4">
             
             <div className="h-32 sm:h-40 w-[90%] rounded-2xl overflow-hidden">
               <img

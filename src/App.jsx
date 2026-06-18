@@ -3,6 +3,7 @@ import { Navbar } from './components/layout/Navbar'
 import { HomeSection } from './sections/HomeSection'
 import { JobBoard } from './sections/JobBoard'
 import { FreeForever } from './sections/FreeForever'
+import { TalentSection } from './sections/TalentSection'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
     <HomeSection />
     <JobBoard />
     <FreeForever />
+    <TalentSection />
     </>
   )
 }

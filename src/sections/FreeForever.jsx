@@ -33,7 +33,7 @@ export const FreeForever = () => {
           </div>
 
           {/* badges */}
-          <div className="absolute bottom-8 lg:bottom-20 -left-5 scale-90 lg:scale-100">
+          <div className="absolute bottom-8 lg:bottom-20 -left-7 lg:left-0 scale-90 lg:scale-100">
             <PayPalBadge
               title="Upcoming Payment In…"
               subtitle="14 Days - $79.99"
@@ -42,7 +42,7 @@ export const FreeForever = () => {
           </div>
 
           {/* main card */}
-          <div className="h-96 w-[260px] lg:h-113 lg:w-88 rounded-4xl shadow-[14px_41px_100px_0px_#3159D31F] flex flex-col items-start pt-4">
+          <div className="h-100 w-80 lg:h-113 lg:w-88 rounded-4xl shadow-[14px_41px_100px_0px_#3159D31F] flex flex-col items-start pt-4">
             <div className="flex flex-col items-start space-y-3 p-4">
               <div className="flex items-start justify-start flex-col space-y-1">
                 <h3 className="text-[#808191] capitalize text-xs">
