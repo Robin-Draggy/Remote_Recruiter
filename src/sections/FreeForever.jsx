@@ -123,17 +123,7 @@ export const FreeForever = () => {
   };
 
   return (
-    <motion.section 
-      className="section flex flex-col md:flex-row items-center justify-between gap-10"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ 
-        once: true, 
-        amount: 0.4,
-        margin: "-100px 0px -100px 0px"
-      }}
-      variants={containerVariants}
-    >
+    <motion.section className="section flex flex-col md:flex-row items-center justify-between gap-10 overflow-hidden w-full">
       {/* LEFT */}
       <motion.div 
         className="flex flex-1 justify-center lg:justify-start w-full"

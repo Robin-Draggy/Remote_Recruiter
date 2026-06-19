@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 
+
 html {
   scroll-behavior: auto;
 }
@@ -11,13 +12,8 @@ body{
 }
 
 :root {
-  --color-bg: #0b0f19;
-  --color-surface: #111827;
-  --color-primary: #6366f1;
-  --color-secondary: #22c55e;
   --color-text: #11142D;
   --color-text-secondary: #11142DA4;
-  --color-muted: #9ca3af;
   --color-button: #4DA8CCE5;
 }
 

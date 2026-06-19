@@ -41,7 +41,7 @@ const App = () => {
     <Footer />
 
 
-    <ScrollToTop />
+    {/* <ScrollToTop /> */}
     </>
   )
 }

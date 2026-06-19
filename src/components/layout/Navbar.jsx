@@ -36,7 +36,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`
-        fixed top-0 left-0 w-full z-50 px-4 md:px-8 lg:px-12 py-4 md:py-6
+        fixed top-0 left-0 right-0 z-50
         transition-all duration-500 ease-in-out
         ${show ? "translate-y-0" : "-translate-y-full"}
         ${scrolled
@@ -45,38 +45,41 @@ export const Navbar = () => {
         }
       `}
     >
-      <div className="flex items-center justify-between">
-        
-        {/* Logo */}
-        <div className="w-24 md:w-30">
-          <img src="/images/Menu.png" alt="Logo" className="w-full" />
+      {/* Inner container with padding */}
+      <div className="w-full px-4 md:px-8 lg:px-12 py-4 md:py-6">
+        <div className="flex items-center justify-between">
+          
+          {/* Logo */}
+          <div className="w-24 md:w-30 shrink-0">
+            <img src="/images/Menu.png" alt="Logo" className="w-full" />
+          </div>
+
+          {/* Desktop */}
+          <div className="hidden md:flex items-center gap-6 shrink-0">
+            <BorderLessBtn title="Sign In" />
+            <BorderBtn title="Sign Up" />
+          </div>
+
+          {/* Mobile */}
+          <button
+            aria-label="open or close"
+            className="md:hidden text-white cursor-pointer shrink-0"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <FaX size={20} /> : <BiMenu size={28} />}
+          </button>
         </div>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6">
-          <BorderLessBtn title="Sign In" />
-          <BorderBtn title="Sign Up" />
-        </div>
-
-        {/* Mobile */}
-        <button
-        aria-label="open or close"
-          className="md:hidden text-white cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ${
+            isOpen ? "max-h-40 mt-6" : "max-h-0"
+          }`}
         >
-          {isOpen ? <FaX size={20} /> : <BiMenu size={28} />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-40 mt-6" : "max-h-0"
-        }`}
-      >
-        <div className="flex flex-col gap-3">
-          <BorderLessBtn title="Sign In" />
-          <BorderBtn title="Sign Up" />
+          <div className="flex flex-col gap-3">
+            <BorderLessBtn title="Sign In" />
+            <BorderBtn title="Sign Up" />
+          </div>
         </div>
       </div>
     </nav>
