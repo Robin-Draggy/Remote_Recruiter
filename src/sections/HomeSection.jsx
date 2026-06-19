@@ -18,7 +18,7 @@ export const HomeSection = () => {
       <div className="absolute -top-50 left-48 h-80 w-80 -translate-x-1/2 rounded-full bg-white/3" />
       <div className="absolute -bottom-20 lg:-bottom-10 -left-20 md:left-[60%] h-110 w-110 -translate-x-1/2 rounded-full bg-white/5" />
 
-      <div className="bg-[linear-gradient(131.63deg,#1E3E85_6.87%,#336DA6_106.04%)] z-60">
+      <div className="bg-[linear-gradient(131.63deg,#1E3E85_6.87%,#336DA6_106.04%)] z-60 py-15 md:py-0">
         {/* Content */}
         <div className="relative z-10 flex h-[60vh] md:h-[80vh] flex-col items-center justify-center px-6 py-20 text-center">
           {/* Animated Heading */}
