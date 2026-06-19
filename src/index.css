@@ -54,6 +54,10 @@ body{
   letter-spacing: 0.4px;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (min-width: 640px) {
   .section {
     padding: 3rem 2rem;

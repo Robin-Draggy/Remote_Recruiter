@@ -8,6 +8,7 @@ import { HelpSection } from './sections/HelpSection'
 import { QuestionSection } from './sections/QuestionSection'
 import { Footer } from './components/layout/Footer'
 import Lenis from 'lenis'
+import { ScrollToTop } from './components/ui/ScrollToTop'
 
 const App = () => {
    useEffect(() => {
@@ -38,6 +39,9 @@ const App = () => {
     <HelpSection />
     <QuestionSection />
     <Footer />
+
+
+    <ScrollToTop />
     </>
   )
 }

@@ -51,7 +51,7 @@ export const HomeSection = () => {
       </div>
 
       <svg
-        className="absolute -bottom-20 left-0 w-full z-20 hidden md:block"
+        className="absolute bottom-0 lg:-bottom-20 left-0 w-full z-20 hidden md:block"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >

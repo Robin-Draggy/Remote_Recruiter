@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SectionBtn } from "../components/ui/SectionBtn";
 import { ProfileBadge } from "../components/ui/ProfileBadge";
-import { Play } from "lucide-react";
 import { FaPlay } from "react-icons/fa";
 
 export const TalentSection = () => {
@@ -226,6 +225,7 @@ export const TalentSection = () => {
               <img
                 src="/images/cartoon.png"
                 alt="RR"
+                loading="lazy"
                 className="h-[90%] w-[90%] rounded-full object-cover"
               />
             </div>
@@ -287,7 +287,8 @@ export const TalentSection = () => {
             >
               <motion.img
                 src="/images/pic1.png"
-                alt=""
+                alt="social"
+                loading="lazy"
                 className="h-full w-full object-cover object-center scale-110"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.5 }}

@@ -14,6 +14,7 @@ export const PayPalBadge = ({
           <img
             src={image}
             alt="avatar"
+            loading="lazy"
             className="h-[55%] w-[55%] object-contain rounded-full"
           />
         </div>

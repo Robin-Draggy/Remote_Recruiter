@@ -334,8 +334,8 @@ export const Footer = () => {
             >
               <div className="p-[2px] rounded-2xl bg-[linear-gradient(132.56deg,#52B4DA_5.63%,#1E3E85_106.18%)]">
                 <motion.button 
-                  className="w-full py-3 rounded-2xl bg-white text-[#1E3E85] font-semibold"
-                  whileHover={{ scale: 1.02 }}
+                  className="w-full py-3 rounded-2xl bg-white text-[#1E3E85] font-semibold cursor-pointer"
+                  whileHover={{ scale: 1 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -372,6 +372,7 @@ export const Footer = () => {
                     <img
                       src="/images/drop.png"
                       alt="drop"
+                      loading="lazy"
                       className="w-4 h-4 object-contain"
                     />
                   </div>
@@ -424,9 +425,9 @@ export const Footer = () => {
               <motion.button 
                 className="w-full py-3 rounded-2xl text-white font-semibold
                 bg-[linear-gradient(129.98deg,#52B4DA_-106.35%,#1E3E85_95.25%)]
-                shadow-[10px_0px_50px_0px_#3159D347]
+                shadow-[10px_0px_50px_0px_#3159D347] cursor-pointer
                 hover:opacity-95 transition"
-                whileHover={{ scale: 1.03, boxShadow: "0px 8px 30px rgba(49, 89, 211, 0.4)" }}
+                whileHover={{ scale: 1, boxShadow: "0px 8px 30px rgba(49, 89, 211, 0.4)" }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2 }}
               >
@@ -444,6 +445,7 @@ export const Footer = () => {
           <motion.img 
             src="/images/Menu.png" 
             alt="logo" 
+            loading="lazy"
             className="w-37.5 object-contain"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
@@ -473,6 +475,7 @@ export const Footer = () => {
           <motion.img 
             src="/images/blue.svg" 
             alt="logo" 
+            loading="lazy"
             className="w-12 h-12 object-contain"
             animate={{ 
               rotate: [0, 10, -10, 0],

@@ -185,6 +185,7 @@ export const JobBoard = () => {
             <img
               src="/images/blue.svg"
               alt="RR"
+              loading="lazy"
               className="h-10 w-10 sm:h-14 sm:w-14 object-contain"
             />
           </motion.div>
@@ -229,7 +230,8 @@ export const JobBoard = () => {
             <div className="h-32 sm:h-40 w-[90%] rounded-2xl overflow-hidden">
               <motion.img
                 src="/images/pic2.png"
-                alt=""
+                alt="facebook"
+                loading="lazy"
                 className="h-full w-full object-cover object-top scale-110 sm:scale-120"
                 initial={{ scale: 1.2 }}
                 whileHover={{ scale: 1.1 }}

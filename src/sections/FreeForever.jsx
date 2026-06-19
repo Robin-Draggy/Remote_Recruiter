@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ProfileBadge } from "../components/ui/ProfileBadge";
 import { SectionBtn } from "../components/ui/SectionBtn";
-import { Check } from "lucide-react";
 import { PayPalBadge } from "../components/ui/PayPalBadge";
+import { BiCheck } from "react-icons/bi";
 
 export const FreeForever = () => {
   const data = [
@@ -230,7 +230,7 @@ export const FreeForever = () => {
                         whileHover={{ scale: 1.2, rotate: 90 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <Check className="text-white" size={10} />
+                        <BiCheck className="text-white" size={10} />
                       </motion.div>
                       <p className="text-[#323445E6] text-xs lg:text-sm">{item}</p>
                     </motion.div>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
 import { BorderBtn } from "../ui/BorderBtn";
 import { BorderLessBtn } from "../ui/BorderLessBtn";
+import { BiMenu } from "react-icons/bi";
+import { FaX } from "react-icons/fa6";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,10 +60,10 @@ export const Navbar = () => {
 
         {/* Mobile */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <FaX size={20} /> : <BiMenu size={28} />}
         </button>
       </div>
 

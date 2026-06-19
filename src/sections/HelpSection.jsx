@@ -200,6 +200,7 @@ export const HelpSection = () => {
           <motion.img
             src="/images/pic2.png"
             alt="hero"
+            loading="lazy"
             className="
               w-[320px]
               lg:w-140
