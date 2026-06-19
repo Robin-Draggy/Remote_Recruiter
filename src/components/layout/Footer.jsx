@@ -26,6 +26,9 @@ export const Footer = () => {
     "Unlimited Job Applicants",
   ];
 
+  const isTouch = typeof window !== "undefined" &&
+  window.matchMedia("(hover: none)").matches;
+
   // Container animation
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -262,7 +265,7 @@ export const Footer = () => {
             >
               <motion.div 
                 className="bg-[#ECF2FF] flex flex-col items-center justify-center w-40 h-36 rounded-xl"
-                whileHover={{ scale: 1.02 }}
+                whileHover={isTouch ? {} : { scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
                 <motion.h2 
@@ -303,7 +306,7 @@ export const Footer = () => {
                               : "bg-[linear-gradient(132.56deg,#52B4DA_5.63%,#1E3E85_106.16%)]"
                           }
                         `}
-                        whileHover={{ scale: 1.2 }}
+                        whileHover={isTouch ? {} : { scale: 1.02 }}
                         transition={{ duration: 0.2 }}
                       >
                         {isDisabled ? (
@@ -335,7 +338,7 @@ export const Footer = () => {
               <div className="p-[2px] rounded-2xl bg-[linear-gradient(132.56deg,#52B4DA_5.63%,#1E3E85_106.18%)]">
                 <motion.button 
                   className="w-full py-3 rounded-2xl bg-white text-[#1E3E85] font-semibold cursor-pointer"
-                  whileHover={{ scale: 1 }}
+                  whileHover={isTouch ? {} : { scale: 1 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -358,7 +361,7 @@ export const Footer = () => {
             >
               <motion.div 
                 className="bg-[#ECF2FF] relative flex flex-2 items-center justify-center flex-col w-44 h-38 rounded-xl"
-                whileHover={{ scale: 1.02 }}
+                whileHover={isTouch ? {} : { scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
                 <motion.div 
@@ -371,7 +374,7 @@ export const Footer = () => {
                   <div className="flex items-center justify-center rounded-full bg-white w-6 h-6">
                     <img
                       src="/images/drop.png"
-                      alt="drop"
+                      alt="premium plan icon"
                       loading="lazy"
                       className="w-4 h-4 object-contain"
                     />
@@ -407,7 +410,7 @@ export const Footer = () => {
                   >
                     <motion.div 
                       className="h-5 w-5 rounded-full flex items-center justify-center bg-[linear-gradient(132.56deg,#52B4DA_5.63%,#1E3E85_106.16%)]"
-                      whileHover={{ scale: 1.2, rotate: 90 }}
+                      whileHover={isTouch ? {} : { scale: 1.02, rotate: 90 }}
                       transition={{ duration: 0.2 }}
                     >
                       <FaCheck className="text-white text-[10px]" />
@@ -427,7 +430,8 @@ export const Footer = () => {
                 bg-[linear-gradient(129.98deg,#52B4DA_-106.35%,#1E3E85_95.25%)]
                 shadow-[10px_0px_50px_0px_#3159D347] cursor-pointer
                 hover:opacity-95 transition"
-                whileHover={{ scale: 1, boxShadow: "0px 8px 30px rgba(49, 89, 211, 0.4)" }}
+                whileHover={isTouch ? {} : { scale: 1, boxShadow: "0px 8px 30px rgba(49, 89, 211, 0.4)" }}
+
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2 }}
               >
@@ -447,7 +451,7 @@ export const Footer = () => {
             alt="logo" 
             loading="lazy"
             className="w-37.5 object-contain"
-            whileHover={{ scale: 1.05 }}
+            whileHover={isTouch ? {} : { scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
 
@@ -455,6 +459,7 @@ export const Footer = () => {
             {socials.map((Icon, index) => (
               <motion.div
                 key={index}
+                aria-label={`Social link ${index + 1}`}
                 className="h-10 w-10 rounded-full flex items-center justify-center
                 bg-[linear-gradient(135deg,rgba(235,237,255,0.15)_0%,rgba(173,184,255,0.15)_100%)]
                 cursor-pointer"

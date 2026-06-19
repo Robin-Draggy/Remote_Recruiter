@@ -1,16 +1,51 @@
-# React + Vite
+# Remote Recruit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated recruitment landing page built with React, Vite, TailwindCSS, and Framer Motion. The project focuses on smooth UX, interactive UI, and high-performance design optimized for both desktop and mobile devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Features
 
-## React Compiler
+- Smooth scroll experience powered by Lenis
+- Advanced UI animations with Framer Motion
+- Responsive and mobile-first design
+- TailwindCSS utility-based styling
+- Interactive pricing cards and animated sections
+- High Lighthouse scores (90+ Performance & Accessibility)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Core
+- React 19
+- Vite
+- TailwindCSS 4
+- JavaScript (ES Modules)
+
+### Animation & UX
+- Framer Motion (UI animations & transitions)
+- Lenis (smooth scrolling)
+
+### Icons & Assets
+- React Icons
+
+### Tooling
+- ESLint (code quality)
+- Vite React Plugin
+
+# Clone the repository
+git clone https://github.com/Robin-Draggy/remote-recruit.git
+cd remote-recruit
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview

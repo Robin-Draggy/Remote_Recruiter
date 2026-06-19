@@ -127,6 +127,7 @@ export const QuestionSection = () => {
       </motion.div>
 
       <motion.button 
+        aria-label="More quesions"
         className="border-2 border-[#53B4DAB1] px-4 py-2 rounded-2xl"
         variants={buttonVariants}
         whileHover={{ 

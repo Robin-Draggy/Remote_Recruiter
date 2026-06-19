@@ -60,6 +60,7 @@ export const Navbar = () => {
 
         {/* Mobile */}
         <button
+        aria-label="open or close"
           className="md:hidden text-white cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >

@@ -27,6 +27,7 @@ export const ScrollToTop = () => {
       {visible && (
         <motion.button
           onClick={scrollToTop}
+          aria-label="Scroll to top"
           initial={{ opacity: 0, y: 20, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.8 }}

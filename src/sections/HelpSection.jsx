@@ -244,6 +244,7 @@ export const HelpSection = () => {
         </motion.p>
 
         <motion.button 
+        aria-label="Get started"
           className="flex items-center gap-4 pl-2 pr-5 py-2 rounded-full bg-[#52b3da3f] hover:bg-[#52b3da55] transition cursor-pointer group"
           variants={buttonVariants}
           whileHover="hover"
